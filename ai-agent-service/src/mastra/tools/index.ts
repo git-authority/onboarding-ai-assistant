@@ -1,0 +1,1 @@
+export { knowledgeRetriever } from './knowledge-retriever';

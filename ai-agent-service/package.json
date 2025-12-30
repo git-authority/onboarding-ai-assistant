@@ -1,0 +1,53 @@
+{
+  "name": "onboarding-ai-assistant",
+  "version": "1.0.0",
+  "description": "A Mastra-powered AI assistant that helps new hires navigate company policies, tools, and FAQs",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "server": "tsx src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mastra",
+    "onboarding",
+    "new-hire",
+    "assistant",
+    "policies",
+    "faq",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.17",
+    "@libsql/client": "0.15.12",
+    "@mastra/core": "0.17.1",
+    "@mastra/libsql": "0.14.2",
+    "@mastra/loggers": "0.10.12",
+    "@supabase/supabase-js": "^2.89.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.0.0",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.1",
+    "tsx": "^4.21.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "mastra": "0.13.1",
+    "typescript": "^5.8.3"
+  }
+}
